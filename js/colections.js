@@ -4,6 +4,9 @@ window.onload = () => {
 }
 let products_group;
 let products_types;
+let carrito = {
+
+}
 
 function init() {
     products_group = document.getElementById('products');
@@ -15,6 +18,21 @@ function init() {
             element.classList.add('selected');
         });
     });
+}
+
+function addToCart(name) {
+    let cart = JSON.parse(localStorage.getItem('cart'));
+    if (cart === null) {
+        cart = {};
+        cart[name] = 1;
+    } else {
+        if (cart.hasOwnProperty(name)) {
+            cart[name]++;
+        } else {
+            cart[name] = 1;
+        }
+    }
+    localStorage.setItem('cart', JSON.stringify(cart));
 }
 
 function loadProducts(product_group) {
@@ -34,9 +52,9 @@ function createProduct(name, price, url) {
                         <h3>${name}</h3>
                         <p>${price}</p>
                     </div>
-                    <button>añadir</button>
+                    <button onclick="addToCart('${name}')">añadir</button>
                 </div>
-            </article>`
+            </article>`;
 }
 
 
