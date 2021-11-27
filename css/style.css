@@ -18,7 +18,7 @@ input[type="reset"] {
 
 body {
     background-color: #f4e3cd;
-    background-color: #faf2e9;
+    background-color: #f4e3cd;
     color: #796651;
 }
 
@@ -53,11 +53,22 @@ nav img:hover {
     border-bottom: 2px solid #af977c;
 }
 
+article {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+}
+
+article .logo {
+    width: 400px;
+    margin: auto;
+}
+
 
 /* ----------------body---------------- */
 
 .title {
-    height: 500px;
+    height: 400px;
     /* background-color: white; */
     display: flex;
     flex-flow: column;
@@ -80,7 +91,9 @@ nav img:hover {
 /* ----------------footer---------------- */
 
 footer {
+    border-top: 0.5px solid #796651;
     /* background-color: white; */
+    background-color: #f4e3cd;
     width: 100%;
     position: fixed;
     bottom: 0px;
@@ -89,4 +102,56 @@ footer {
     font-size: 10px;
     display: flex;
     justify-content: end;
+}
+
+
+/* -------------carrito------------- */
+
+.cart {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    gap: 20px;
+    padding: 15px;
+    border: 1px solid #af977c;
+    border-radius: 5px;
+}
+
+.cart_product {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart_product_name {}
+
+.cart_product_amount {}
+
+button,
+input[type=submit] {
+    position: relative;
+    right: 0px;
+    background-color: #af977c;
+    border: 1px solid #af977c;
+    color: #faf2e9;
+    border-radius: 2px;
+    padding: 5px;
+    height: 40px;
+}
+
+button:hover,
+input[type=submit]:hover {
+    background-color: #faf2e9;
+    border: 1px solid #af977c;
+    color: #af977c;
+}
+
+
+/* -------------utils------------- */
+
+.hide {
+    display: none;
 }

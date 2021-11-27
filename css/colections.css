@@ -13,32 +13,6 @@
 }
 
 
-/* -------------carrito------------- */
-
-.cart {
-    position: absolute;
-    top: 70px;
-    right: 20px;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    flex-flow: column;
-    gap: 20px;
-    padding: 15px;
-    border: 1px solid #af977c;
-    border-radius: 5px;
-}
-
-.cart_product {
-    display: flex;
-    justify-content: space-between;
-}
-
-.cart_product_name {}
-
-.cart_product_amount {}
-
-
 /* -------------productos------------- */
 
 .products {
@@ -49,6 +23,7 @@
     flex-wrap: wrap;
     gap: 10px;
     margin: auto;
+    padding-bottom: 100px;
 }
 
 article {
@@ -76,28 +51,4 @@ article .product_info {
 article img {
     border-radius: 3px 3px 0px 0px;
     border-bottom: 1px solid #af977c;
-}
-
-article button {
-    position: relative;
-    right: 0px;
-    background-color: #af977c;
-    border: 1px solid #af977c;
-    color: #faf2e9;
-    border-radius: 10px;
-    padding: 5px;
-    height: 40px;
-}
-
-article button:hover {
-    background-color: #faf2e9;
-    border: 1px solid #af977c;
-    color: #af977c;
-}
-
-
-/* -------------utils------------- */
-
-.hide {
-    display: none;
 }
