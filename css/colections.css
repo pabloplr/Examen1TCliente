@@ -13,6 +13,32 @@
 }
 
 
+/* -------------carrito------------- */
+
+.cart {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    gap: 20px;
+    padding: 15px;
+    border: 1px solid #af977c;
+    border-radius: 5px;
+}
+
+.cart_product {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart_product_name {}
+
+.cart_product_amount {}
+
+
 /* -------------productos------------- */
 
 .products {
@@ -67,4 +93,11 @@ article button:hover {
     background-color: #faf2e9;
     border: 1px solid #af977c;
     color: #af977c;
+}
+
+
+/* -------------utils------------- */
+
+.hide {
+    display: none;
 }
