@@ -63,3 +63,8 @@ input[type=submit] {
 .logo {
     width: 200px !important;
 }
+
+#errors {
+    color: rgb(179, 51, 19)!important;
+    /* font-weight: bold; */
+}

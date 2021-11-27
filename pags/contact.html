@@ -33,10 +33,11 @@
         <img class="logo" src="../img/LOGO_EXAMEN.png" alt="">
         <p>¿Tienes alguna pregunta? ¿Quieres saber más sobre nuestra tienda?<br> Si no encuentras lo que necesitas, contáctanos.</p>
         <form action="">
-            <input required minlength="3" type="text" placeholder="Nombre">
-            <input required type="email" placeholder="Email">
+            <input id="name" required minlength="3" type="text" placeholder="Nombre">
+            <input id="email" required type="email" placeholder="Email">
             <textarea required minlength="3" placeholder="Escribe tu mensaje" name="" id="" cols="30" rows="10"></textarea>
-            <input type="submit" value="Enviar">
+            <div id="errors"></div>
+            <input id="enviar" type="submit" value="Enviar">
         </form>
         <div class="social_media_btns">
             <div class="social_media">
@@ -52,8 +53,8 @@
     <div class="cart hide" id="cart">
     </div>
     <footer>
-        <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-        <div>Iconos diseñados por <a href="https://www.flaticon.es/autores/ruslan-babkin" title="Ruslan Babkin">Ruslan Babkin</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>
+        <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> and </div>
+        <div> <a href="https://www.flaticon.es/autores/ruslan-babkin" title="Ruslan Babkin"> Ruslan Babkin</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>
     </footer>
 </body>
 
