@@ -106,7 +106,7 @@ function loadProducts(product_group) {
 // }
 
 function createProduct(name, price, url) {
-    return `<article>
+    return `<article class="w3-animate-opacity">
                 <img src="${url}" alt=" ">
                 <div class="product_info">
                     <div class="data">
