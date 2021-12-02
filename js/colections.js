@@ -110,7 +110,7 @@ function createProduct(name, price, url) {
                 <img src="${url}" alt=" ">
                 <div class="product_info">
                     <div class="data">
-                        <h3>${name}</h3>
+                        <h2>${name}</h2>
                         <p>${price} €</p>
                     </div>
                     <button onclick="addToCart('${name}','${price}')">añadir</button>
